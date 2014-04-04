@@ -24,6 +24,5 @@ var debounced = db(function(v) {console.log(v)}, 100, true)
 
 debounce('hi')
 debounce('hi')
-// logs 'hi' once right away, but not a second time. calling after 100ms will
-// log again
+// logs 'hi' once right away, but not a second time. calling after 100ms will log again
 ```
