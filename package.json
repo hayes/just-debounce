@@ -1,0 +1,22 @@
+{
+  "name": "just-debounce",
+  "version": "0.0.0",
+  "description": "just-debounce =============",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hayes/just-debounce.git"
+  },
+  "keywords": [
+    "debounce"
+  ],
+  "author": "Michael Hayes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hayes/just-debounce/issues"
+  },
+  "homepage": "https://github.com/hayes/just-debounce"
+}
