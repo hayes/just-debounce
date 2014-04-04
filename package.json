@@ -1,7 +1,7 @@
 {
   "name": "just-debounce",
   "version": "0.0.1",
-  "description": "just-debounce =============",
+  "description": "a simple debounce with no dependencies or crazy defaults",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

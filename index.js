@@ -1,20 +1,19 @@
 module.exports = debounce
 
-function debounce(fn, delay, at_start) {
+function debounce(fn, delay, at_start, guarantee) {
   var timeout
-
-  if(typeof delay === 'undefined') {
-    delay = 0
-  }
+    , args
 
   return function() {
-    var args = Array.prototype.slice.call(arguments)
-      , self = this
+    var self = this
 
-    if(timeout && at_start) {
+    args = Array.prototype.slice.call(arguments)
+
+    if(timeout && (at_start || guarantee)) {
       return
     } else if(!at_start) {
       clear()
+
       return timeout = setTimeout(run, delay)
     }
 
