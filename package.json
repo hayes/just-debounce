@@ -1,6 +1,6 @@
 {
   "name": "just-debounce",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "just-debounce =============",
   "main": "index.js",
   "scripts": {
