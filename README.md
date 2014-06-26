@@ -16,7 +16,8 @@ small corectly implemented version of debounce
 delay rather than the end
 * `guarantee`: ensures the time before the next call th `fn` is not greater \
 than the delay perior.
-```
+
+```js
 var db = require('just-debounce')
 
 var debounced = db(function(v) {console.log(v)}, 100)
@@ -25,7 +26,8 @@ debounced('hi')
 debounced('hi')
 // logs 'hi' once after 100ms
 ```
-```
+
+```js
 var db = require('just-debounce')
 
 var debounced = db(function(v) {console.log(v)}, 100, true)
@@ -34,7 +36,8 @@ debounced('hi')
 debounced('hi')
 // logs 'hi' once right away, but not a second time. calling after 100ms will log again
 ```
-```
+
+```js
 var db = require('just-debounce')
 
 var debounced = db(function(v) {console.log(v)}, 100, false, true)
@@ -44,3 +47,7 @@ setTimeout(function() {debounced('hi2')}, 80)
 
 // logs 'hi2' once 100ms after the first call to debounced
 ```
+
+# license
+
+MIT
