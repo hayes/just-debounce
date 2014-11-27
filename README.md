@@ -1,21 +1,21 @@
 just-debounce
 =============
 
-just a basic denounce function
+just a basic debounce function
 
 # Why?
 I searched npm and the first 3 pages of results for "debounce" did not have a
-small corectly implemented version of debounce
+small correctly implemented version of debounce
 
 # Usage
 
 ### arguments
 * `fn`: the function to debounce
-* `delay`: deboucne delay in ms
-* `at_start:` if true, the function will be called at the begining of the
+* `delay`: debounce delay in ms
+* `at_start:` if true, the function will be called at the beginning of the
 delay rather than the end
-* `guarantee`: ensures the time before the next call th `fn` is not greater \
-than the delay perior.
+* `guarantee`: ensures the time before the next call the `fn` is not greater \
+than the delay period.
 ```
 var db = require('just-debounce')
 
